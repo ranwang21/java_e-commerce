@@ -9,7 +9,7 @@ Java, Java web, JSP, JSTL, MySQL, JavaScript, JQuery, Responsive layout, and JDB
 ## Installation
 
 - Open mysql workbench, create a database named `e_commercetp` with help of the `e_commercetp.sql` file in the `DB` folder of the project
-- Open the project with [Netbeans] (https://netbeans.org/)
+- Open the project with [Netbeans](https://netbeans.org/)
 - Build the project and run it in the browser of your preference
 
 ## How the app works
