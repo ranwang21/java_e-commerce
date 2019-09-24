@@ -11,6 +11,7 @@ Java, Java web, JSP, JSTL, MySQL, JavaScript, JQuery, Responsive layout, and JDB
 - Open mysql workbench, create a database named `e_commercetp` with help of the `e_commercetp.sql` file in the `DB` folder of the project
 - Open the project with [Netbeans](https://netbeans.org/)
 - Build the project and run it in the browser of your preference
+- Configure your database connection: you can change the default database connection username and password to your owns' by change the `login` or `pwd` variables in the `src/service/ConnectionDB` file
 
 ## How the app works
 
