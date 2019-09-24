@@ -1,0 +1,417 @@
+/* CSS Table of contentS
+
+  1.GENERAL SETTINGS / MAIN CONTAINER
+  2.HEADER
+  3.MAIN content
+  4.footer
+  5.Media QUERIES
+
+ ---------------------*/
+
+/* 1.GENERAL SETTINGS + Main Container*
+---------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:1em 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+img{
+    height:auto;
+    width:auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+a:link,
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: rgb(0, 174, 255);
+}
+
+/* 2.HEADER*
+---------------------------------*/
+
+.main-header {
+    background-color: rgb(245, 245, 245);
+    padding-top: 1em; /* to prevent top margin collapse */
+    padding-bottom: 1em;
+}
+
+.name {
+    text-align: center;
+    padding:0;
+}
+
+.main-nav li {
+    text-align: center;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-shadow: 1px 1px 3px slategrey;
+}
+
+.profile-image {
+    padding-top: 1em; /* to avoid being too close to navigation */
+    box-shadow: 1px 1px 3px slategrey;
+}
+
+.sign_in_out{
+
+}
+
+/* 3.MAIN CONTENT*
+---------------------------------*/
+
+
+.container {
+    max-width:80%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.skills-wrapper {
+    margin:4em auto;
+}
+
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.project_detail {
+    margin: 2em auto;
+    width: 80%;
+    display: block;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+
+.detail_img{
+    max-width: 120px;
+}
+
+
+/* 4.FORM ELEMENTS*
+---------------------------------*/
+
+/*form styles*/
+#msform {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+.detail_img{
+    max-height: 90px;
+    max-width: 90px;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+
+
+.project {
+    width: 50%;
+    flex: 1 0 80%;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+
+/*link style*/
+.link_button{
+    background-color: rgb(245, 245, 245);
+    color:black;
+    padding: .4em;
+    border-radius: 4px;
+}
+
+.link_button:hover{
+    opacity: 0.7;
+}
+
+/* 5.FOOTER*
+---------------------------------*/
+.main-footer {
+    background-color:  rgb(245, 245, 245);
+    margin:0 auto;
+    text-align: center;
+    border-bottom: solid 1px slategrey;
+}
+
+.contact p {
+    border-bottom: solid 1px slategrey;
+}
+
+.footer-1,
+.footer-2 {
+    padding:0 15px; /* avoid element being too close to each other */
+    text-align: justify;
+    display:inline-block;
+}
+
+.bottom-line {           /*--to draw the bottom line--*/
+    border-top:solid 1px slategrey;
+}
+
+.footer-3 {
+    display: none;
+}
+
+.clearfix::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.countAdjust{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+
+
+/* 6.MEDIA QUERIES*
+---------------------------------*/
+
+@media (min-width:768px) {
+    /*for the navigation*/
+    .name,
+    .main-nav li {
+        display:inline-block;
+    }
+
+    .main-nav li {                   /* to remove box and text effects */
+        background-color: inherit;
+        box-shadow:none;
+        padding: 0 25px;
+        margin-bottom: 2em;
+    }
+
+    /*for the self-intro*/
+    .profile-image {
+        float:right;
+        margin-right: 2em;
+        margin-left: 10px;
+        margin-bottom: 2em;
+    }
+
+    /*for the portfolio*/
+
+
+    .project p {
+        height: 6em;  /*to fix the alignment issue as p of each article has different length, generating different height*/
+    }
+
+    .project {
+        flex: 1 0 28%;
+    }
+
+    /*for the skills*/
+
+    .skills {
+        width: 50%;
+        float: left;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+        margin-bottom: 2em; /*avoid p being too close to footer*/
+    }
+
+    .skills p {
+        height: 6em;  /*to fix the alignment issue as p of each article has different length, generating different height*/
+        font-family: "Raleway", sans-serif;
+    }
+
+    /*for the footer*/
+    .footer-1 {
+        float: left;
+        margin-right: 6em; /*avoid Ran being too close to links*/
+    }
+
+    .footer-2 {
+        display:none; /*when the screen is larger, hide footer 2, and replace it with footer 3*/
+    }
+
+    .footer-3,
+    .footer-3 li {
+        display:inline-block;/*replace footer2 by footer 3*/
+    }
+
+    .footer-3 {
+        float:right;
+    }
+
+    .footer-3 li {
+        padding-right: 2em;
+    }
+
+}
+
+@media (min-width:1024px) {
+    /*for the main nav*/
+    .main-nav,
+    .name {
+        display:inline-block;
+    }
+
+    .name {
+        float:left;
+    }
+
+    .main-nav {
+        float:right;
+    }
+
+    .main-nav li {
+        float:left;
+    }
+
+    /*for the portfolio*/
+
+    .project {
+        width: 30%;
+        float: left;
+    }
+}
