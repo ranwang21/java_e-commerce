@@ -73,7 +73,7 @@ public class PayC extends HttpServlet {
         request.setAttribute("info", "pay success！！！");
 
         //redirect
-        request.getRequestDispatcher("/info.jsp").forward(request, response);
+        request.getRequestDispatcher("/livreC").forward(request, response);
 
     }
 

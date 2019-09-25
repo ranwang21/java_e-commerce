@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public class ConnectionDB {
 
     private static String login = "root";
-    private static String pwd = "abc123...";
+    private static String pwd = "root";
     private static String url = "jdbc:mysql:///e_commercetp?serverTimezone=UTC";
     private static Connection connection;
 
