@@ -6,6 +6,10 @@ For pedagogical propose, the pay process is simulated by sending a mail to the u
 ##### Tech Stack
 Java, Java web, JSP, JSTL, MySQL, JavaScript, JQuery, Responsive layout, and JDBC.
 
+## Preview
+
+![](preview/preview.PNG)
+
 ## Installation
 
 - Open mysql workbench, create a database named `e_commercetp` with help of the `e_commercetp.sql` file in the `DB` folder of the project
