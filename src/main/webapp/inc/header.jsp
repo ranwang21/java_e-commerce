@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>My Bookself</title>
+        <title>BooksForSales</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
@@ -35,7 +35,7 @@
             <div class="container">
 
                 <div class="clearfix">
-                    <h1 class="name"><a href="${pageContext.request.contextPath}/">My Bookself</a></h1>
+                    <h1 class="name"><a href="${pageContext.request.contextPath}/">BooksForSales</a></h1>
                     <nav class="main-nav">
                         <ul>
 

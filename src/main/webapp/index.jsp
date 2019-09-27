@@ -1,7 +1,7 @@
 <%@include file="inc/header.jsp" %>
 
 <section>
-    <h2 id="portfolio">BooksForSales</h2>
+    <h2 id="portfolio">Catalog</h2>
     <!--    iterate here to show corresponding articles-->
     <div class="flex-container">
         <c:forEach items="${listLivre}" var="livre">
